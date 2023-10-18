@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faster Better Smarter!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/daft-punk.png">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div id="cat_container">
+        <h1 id="cat_label">Choose the quiz category</h1>
+        <br>
+        <div id="cat_buttons_holder">
+            <button class="cat_button button" onclick="SendCategory(0)">Science</button>
+            <button class="cat_button button" onclick="SendCategory(1)">Film & TV</button>
+            <button class="cat_button button" onclick="SendCategory(2)">Music</button>
+            <button class="cat_button button" onclick="SendCategory(3)">History</button>
+            <button class="cat_button button" onclick="SendCategory(4)">Geography</button>
+            <button class="cat_button button" onclick="SendCategory(5)">Art & Literature</button>
+            <button class="cat_button button" onclick="SendCategory(6)">Sport & Leisure</button>
+            <button class="cat_button button" onclick="SendCategory(7)">Food & Drink</button>
+            <button class="cat_button button" onclick="SendCategory(8)">Society & Culture</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="game_container">
+        <h1 id="game_question"></h1>
+        <br>
+        <div id="game_buttons">
+            <button class="game_choise button" onclick="ChosenAnswer(0)"></button>
+            <button class="game_choise button" onclick="ChosenAnswer(1)"></button>
+            <button class="game_choise button" onclick="ChosenAnswer(2)"></button>
+            <button class="game_choise button" onclick="ChosenAnswer(3)"></button>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="endscreen_container">
+        <div id="results_container">
+            <div style="max-width: 200px; color: white; padding: 50px;">
+                <h1 id="correct_label" class="results_container"></h1>
+            </div>
+            <br>
+            <div style="max-width: 200px; color: white; padding: 50px;">
+                <h1 id="incorrect_label" class="results_label"></h1>
+            </div>
+        </div>
+        <br>
+        <button id="replay_button" class="button" onclick="replay()">Play again</button>
+    </div>
+</body>
+
+</html>

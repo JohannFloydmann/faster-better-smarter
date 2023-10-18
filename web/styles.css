@@ -1,0 +1,88 @@
+body {
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: gainsboro;
+    text-align: center;
+}
+
+#cat_label {
+    padding-left: 20%;
+}
+
+#cat_buttons_holder {
+    display: grid;
+    gap: 3em 2em;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+/* CSS */
+.button {
+  background-color: initial;
+  background-image: linear-gradient(#cb97ff 0, #af60ff 100%);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  outline: 0;
+  text-align: center;
+  transition: all .3s cubic-bezier(.05, .03, .35, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: bottom;
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+#game_buttons {
+    display: grid;
+    gap: 3em 2em;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 200px 200px;
+}
+
+#game_container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#results_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#endscreen_container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#replay_button{
+    width: 200px;
+    height: 150px;
+    font-size: 18pt;
+}
